@@ -296,6 +296,13 @@ string.interleave = function(prefix, text, postfix)
   return string.join({ prefix, postfix }, text)
 end
 
+--- @param t string
+--- @return string?
+string.quote = function(t)
+  if not t or type(t) ~= 'string' then return end
+  return string.format("'%s'", t)
+end
+
 --- Split a string into three around specified indices
 --- @param str string
 --- @param si number
