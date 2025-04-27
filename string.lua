@@ -292,6 +292,10 @@ string.unlines = function(strs)
   return string.join(strs, '\n')
 end
 
+--- @param prefix string
+--- @param text string
+--- @param postfix string
+--- @return string
 string.interleave = function(prefix, text, postfix)
   return string.join({ prefix, postfix }, text)
 end
