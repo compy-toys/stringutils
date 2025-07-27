@@ -1,5 +1,5 @@
 --- @diagnostic disable: duplicate-set-field
-utf8 = require((...):match("(.+)%.[^%.]+$") .. '.utf')
+utf8 = utf8 or require((...):match("(.+)%.[^%.]+$") .. '.utf')
 
 --- @alias str string|string[]
 
